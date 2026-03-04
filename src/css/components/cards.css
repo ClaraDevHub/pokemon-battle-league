@@ -1,0 +1,84 @@
+.player-area {
+  background: var(--cinza);
+  border: 2px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+  padding: 24px;
+  border-radius: var(--radius);
+  flex: 1;
+  max-width: 720px;       
+  min-height: 600px;      
+  max-height: 90vh;       
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.5);
+}
+
+.player-area h2 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(8px, 1.2vw, 12px);
+  color: var(--amarelo);
+  text-shadow:
+    2px 2px 0 var(--vermelho),
+    4px 4px 0 var(--preto);
+  flex-shrink: 0;
+}
+
+.slot {
+  background: rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.slot h3 {
+  font-size: 9px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+.slots-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  width: 100%;
+  flex: 1;
+}
+
+.pokemon-display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon-card {
+  margin-top: 4px;
+  animation: fadeIn 0.4s ease;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-img {
+  width: clamp(90px, 12vw, 160px);
+  display: block;
+  margin: 0 auto 3px;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.5));
+  flex-shrink: 0;
+}
+
+.pokemon-name {
+  font-size: clamp(12px, 1.8vw, 18px);
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--branco);
+  margin-bottom: 3px;
+}

@@ -1,0 +1,55 @@
+@media (min-width: 600px) {
+  .player-area {
+    max-width: 480px;      
+    min-height: 360px;     
+    max-height: 580px;     
+  }
+  .slot { padding: 8px; }
+}
+
+@media (min-width: 960px) {
+  .arena {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+  }
+
+  .player-area {
+    max-width: 480px;  
+    min-height: 360px;    
+    max-height: 580px;      
+    flex: 1;
+  }
+
+  .vs { align-self: center; flex-shrink: 0; }
+
+  .header-container h1 { font-size: 22px; }
+}
+
+@media (max-width: 768px) {
+  .arena {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .player-area {
+    max-width: 95%;
+    min-height: auto;
+  }
+
+  .vs {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .player-area {
+    max-width: 480px;    
+    min-height: 360px;  
+    max-height: 580px;   
+  }
+
+  .pokemon-img { width: 90px; }
+}

@@ -1,0 +1,138 @@
+html, body {
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--branco);
+  text-align: center;
+  background: url("../assets/images/arena.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 10px 54px;
+}
+
+.arena {
+  display: flex;
+  flex-direction: row;
+  align-items: center;       
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.vs {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(32px, 5vw, 70px);
+  color: var(--amarelo);
+  align-self: center;
+  flex-shrink: 0;
+  text-shadow:
+    2px 2px 0 var(--vermelho),
+    4px 4px 0 var(--preto);
+}
+
+.loading {
+  padding: 10px;
+  font-size: 10px;
+  color: rgba(255,255,255,0.7);
+}
+
+.pokeball-spin {
+  font-size: 18px;
+  display: inline-block;
+  animation: spin 0.8s linear infinite;
+}
+
+.error-msg {
+  background: rgba(204,0,0,0.3);
+  border: 1px solid var(--vermelho);
+  border-radius: 7px;
+  padding: 7px;
+  margin-top: 6px;
+  font-size: 9px;
+  color: #ffb3b3;
+  animation: fadeIn 0.3s ease;
+}
+
+.stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+  width: 100%;
+  margin: 3px 0;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.stat-label {
+  font-size: clamp(9px, 1.2vw, 12px);          
+  font-weight: 700;
+  color: rgba(255,255,255,0.8);
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.stat-bar-bg {
+  flex: 1;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  height: 10px;             
+  overflow: hidden;
+}
+
+.stat-bar {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.stat-val {
+  font-size: clamp(9px, 1.2vw, 12px);          
+  color: var(--branco);
+  width: 20px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.total-stats {
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--amarelo);
+  margin-top: 3px;
+  text-shadow: 1px 1px #000;
+}
+
+.player-total {
+  background: rgba(255,203,5,0.15);
+  border: 1px solid var(--amarelo);
+  border-radius: 7px;
+  padding: 10px;
+  font-size: clamp(12px, 1.6vw, 16px);
+  font-weight: 700;
+  color: var(--amarelo);
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.player-total span {
+  font-size: clamp(18px, 2.5vw, 26px);
+  display: block;
+  margin-top: 1px;
+}

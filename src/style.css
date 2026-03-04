@@ -30,7 +30,7 @@
 }
 
 /* =============================
-    BODY — SEM SCROLL, TELA CHEIA
+    BODY
 ============================= */
 html, body {
   scroll-behavior: smooth;
@@ -51,7 +51,7 @@ body {
 }
 
 /* =============================
-    HEADER — COMPACTO
+    HEADER 
 ============================= */
 header {
   background: transparent;
@@ -95,7 +95,7 @@ main {
 .arena {
   display: flex;
   flex-direction: row;
-  align-items: center;       /* centraliza verticalmente */
+  align-items: center;       
   justify-content: center;
   gap: 10px;
   flex: 1;
@@ -103,8 +103,6 @@ main {
 
 /* =============================
     PLAYER AREA — CARD PRINCIPAL
-    ↕ Mexa em min-height e max-height para controlar a altura
-    ↔ Mexa em max-width para controlar a largura
 ============================= */
 .player-area {
   background: var(--cinza);
@@ -113,9 +111,9 @@ main {
   padding: 24px;
   border-radius: var(--radius);
   flex: 1;
-  max-width: 720px;       /* ← LARGURA do card (aumentada de 400px) */
-  min-height: 600px;      /* ← ALTURA MÍNIMA do card (aumentada de 300px) */
-  max-height: 90vh;       /* ← ALTURA MÁXIMA do card (aumentada de 500px) */
+  max-width: 720px;       
+  min-height: 600px;      
+  max-height: 90vh;       
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,7 +144,6 @@ main {
 
 /* =============================
     SLOT — CARD INTERNO DO POKÉMON
-    ↕ Mexa em padding para dar mais ou menos espaço interno
 ============================= */
 .slot {
   background: rgba(255,255,255,0.07);
@@ -360,8 +357,6 @@ main {
 
 /* =============================
     BARRAS DE STATS
-    ↕ Mexa em height para grossura das barras
-    ↔ Mexa em font-size dos labels para tamanho do texto
 ============================= */
 .stats-list {
   display: flex;
@@ -378,19 +373,21 @@ main {
   gap: 3px;
 }
 
+/* ← tamanho do texto HP, ATK... */
 .stat-label {
-  font-size: clamp(9px, 1.2vw, 12px);          /* ← tamanho do texto HP, ATK... */
+  font-size: clamp(9px, 1.2vw, 12px);          
   font-weight: 700;
   color: rgba(255,255,255,0.8);
   width: 20px;
   flex-shrink: 0;
 }
 
+/* ← grossura da barra */
 .stat-bar-bg {
   flex: 1;
   background: rgba(255,255,255,0.15);
   border-radius: 10px;
-  height: 10px;             /* ← grossura da barra */
+  height: 10px;             
   overflow: hidden;
 }
 
@@ -400,8 +397,9 @@ main {
   transition: width 0.6s ease;
 }
 
+/* ← tamanho dos números dos stats */
 .stat-val {
-  font-size: clamp(9px, 1.2vw, 12px);          /* ← tamanho dos números dos stats */
+  font-size: clamp(9px, 1.2vw, 12px);          
   color: var(--branco);
   width: 20px;
   text-align: right;
@@ -585,9 +583,9 @@ footer { display: none; }
 ============================= */
 @media (min-width: 600px) {
   .player-area {
-    max-width: 480px;      /* ← LARGURA aumentada */
-    min-height: 360px;     /* ← ALTURA MÍNIMA aumentada */
-    max-height: 580px;     /* ← ALTURA MÁXIMA aumentada */
+    max-width: 480px;      
+    min-height: 360px;     
+    max-height: 580px;     
   }
   .slot { padding: 8px; }
 }
@@ -605,9 +603,9 @@ footer { display: none; }
   }
 
   .player-area {
-    max-width: 480px;       /* ← LARGURA no desktop aumentada */
-    min-height: 360px;      /* ← ALTURA MÍNIMA no desktop aumentada */
-    max-height: 580px;      /* ← ALTURA MÁXIMA no desktop aumentada */
+    max-width: 480px;  
+    min-height: 360px;    
+    max-height: 580px;      
     flex: 1;
   }
 
@@ -643,9 +641,9 @@ footer { display: none; }
 ============================= */
 @media (min-width: 1200px) {
   .player-area {
-    max-width: 480px;      /* ← LARGURA aumentada */
-    min-height: 360px;     /* ← ALTURA MÍNIMA aumentada */
-    max-height: 580px;     /* ← ALTURA MÁXIMA aumentada */
+    max-width: 480px;    
+    min-height: 360px;  
+    max-height: 580px;   
   }
 
   .pokemon-img { width: 90px; }

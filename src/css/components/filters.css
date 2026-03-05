@@ -1,0 +1,37 @@
+.tipos {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.tipo {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: clamp(9px, 1.2vw, 12px);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white;
+  text-shadow: 1px 1px rgba(0,0,0,0.4);
+}
+
+.tipo-fire      { background: #F08030; }
+.tipo-water     { background: #6890F0; }
+.tipo-grass     { background: #78C850; }
+.tipo-electric  { background: #F8D030; }
+.tipo-ice       { background: #98D8D8; }
+.tipo-fighting  { background: #C03028; }
+.tipo-poison    { background: #A040A0; }
+.tipo-ground    { background: #E0C068; }
+.tipo-flying    { background: #A890F0; }
+.tipo-psychic   { background: #F85888; }
+.tipo-bug       { background: #A8B820; }
+.tipo-rock      { background: #B8A038; }
+.tipo-ghost     { background: #705898; }
+.tipo-dragon    { background: #7038F8; }
+.tipo-dark      { background: #201524; }
+.tipo-steel     { background: #B8B8D0; }
+.tipo-fairy     { background: #EE99AC; }
+.tipo-normal    { background: #A8A878; }

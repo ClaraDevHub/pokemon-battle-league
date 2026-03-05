@@ -1,0 +1,27 @@
+/* =============================
+    IMPORTS
+============================= */
+
+/* Base */
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+
+/* Components */
+@import url('./components/buttons.css');
+@import url('./components/cards.css');
+@import url('./components/filters.css');
+
+/* Layout */
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+@import url('./layout/forms.css');
+@import url('./layout/modals.css');
+
+/* Main */
+@import url('./main.css');
+
+/* Animations */
+@import url('./animations.css');
+
+/* Responsive */
+@import url('./responsive.css');

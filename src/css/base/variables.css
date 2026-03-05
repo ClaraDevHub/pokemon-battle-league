@@ -1,0 +1,10 @@
+:root {
+  --azul:      #3b4cca;
+  --azul-dark: #2a36a3;
+  --vermelho:  #cc0000;
+  --amarelo:   #ffcb05;
+  --branco:    #ffffff;
+  --preto:     #1a1a1a;
+  --cinza:     rgba(0,0,0,0.6);
+  --radius:    10px;
+}

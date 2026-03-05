@@ -1,0 +1,25 @@
+header {
+  background: transparent;
+  flex-shrink: 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header-container h1 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(14px, 2.5vw, 26px);
+  color: var(--amarelo);
+  text-shadow: 2px 2px 0 var(--preto), -1px -1px 0 var(--vermelho);
+  letter-spacing: 1px;
+}
+
+.logo {
+  width: clamp(150px, 14vw, 200px);  
+  height: auto;
+  border-radius: contain;
+}
